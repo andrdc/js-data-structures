@@ -1,0 +1,30 @@
+{
+  "name": "js-data-structures",
+  "version": "0.0.1",
+  "description": "Data Structures with JavaScript",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Andrsrz/js-data-structures.git"
+  },
+  "author": "Andres Ruiz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Andrsrz/js-data-structures/issues"
+  },
+  "homepage": "https://github.com/Andrsrz/js-data-structures#readme",
+  "devDependencies": {
+    "jest": "^26.1.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "babel": "^6.23.0"
+  }
+}
