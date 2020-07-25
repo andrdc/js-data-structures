@@ -1,4 +1,7 @@
 version: 2
+
+# Configuration with concurrent jobs!
+
 jobs:
   build:
     working_directory: ~/repo
@@ -6,5 +9,20 @@ jobs:
       - image: circleci/node:14.2.0 # the primary container, where your job's commands are run
     steps:
       - checkout # check out the code in the project directory
-      - run: npm install # install packages
-      - run: npm test # run tests
+      - run: npm install # Build
+  test:
+    working_directory: ~/repo
+    docker:
+      - image: circleci/node:14.2.0 # the primary container, where your job's commands are run
+    steps:
+      - checkout # check out the code in the project directory
+      - run: npm run test # Test
+
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - build
+      - test:
+          requires:
+            - build
