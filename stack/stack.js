@@ -10,6 +10,16 @@ class Stack{
 		return this.items.length;
 	}
 
+	/* Check Stack emptiness
+	 * @param none : none
+	 * @return empty : boolean */
+	isEmpty(){
+		if(this.size() === 0)
+			return true;
+		else
+			return false;
+	}
+
 	/* Add new element to the Stack. This means that the new element
 	 * is going to the be at top of all of the other elements.
 	 * @param element : any
