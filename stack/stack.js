@@ -14,10 +14,7 @@ class Stack{
 	 * @param none : none
 	 * @return empty : boolean */
 	isEmpty(){
-		if(this.size() === 0)
-			return true;
-		else
-			return false;
+		return this.size() === 0;
 	}
 
 	/* Add new element to the Stack. This means that the new element
