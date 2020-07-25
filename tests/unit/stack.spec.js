@@ -66,3 +66,15 @@ describe("clear()", () => {
 		expect(myStack.clear()).toStrictEqual([]);
 	});
 });
+
+describe("toString()", () => {
+	var myStack = new Stack();
+	myStack.push('Coqueta');
+	myStack.push('Gizmo');
+	myStack.push('Maia');
+	myStack.push('Tyra');
+
+	it("Return Stack as String", () => {
+		expect(myStack.toString()).toStrictEqual("Tyra, Maia, Gizmo, Coqueta");
+	});
+});

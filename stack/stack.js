@@ -64,6 +64,19 @@ let Stack = (function() {
 			}
 			return myItems;
 		}
+
+		/* Print Stack as a String. The first is the top, the last is
+		 * the base.
+		 * @param none : none
+		 * @return stack : String */
+		toString(){
+			let str = '';
+			let myItems = items.get(this);
+			for(let itemPos = this.size() - 1; itemPos >= 0; itemPos--){
+				str += (myItems[itemPos] + ((itemPos !== 0) ? ', ' : '') );
+			}
+			return str;
+		}
 	}
 	return Stack;
 })();
