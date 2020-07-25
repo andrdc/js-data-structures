@@ -1,9 +1,9 @@
 const Stack = require('../../stack/stack');
 
-describe("Basic methods : size()", () => {
+describe("size()", () => {
 	var myStack = new Stack();
 
-	it("Check size", () => {
+	it("Check size for an empty Stack", () => {
 		expect(myStack.size()).toBe(0);
 	});
 });
