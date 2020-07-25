@@ -10,8 +10,8 @@ class Stack{
 		return this.items.length;
 	}
 
-	/* Add new element to the Stack. This means that the element is
-	 * going to the be at top of all of the other elements.
+	/* Add new element to the Stack. This means that the new element
+	 * is going to the be at top of all of the other elements.
 	 * @param element : any
 	 * @return items : array */
 	push(element){
