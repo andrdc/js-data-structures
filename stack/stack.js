@@ -18,5 +18,13 @@ class Stack{
 		this.items.push(element);
 		return this.items;
 	}
+
+	/* Remove an element from the Stack. The top element is going to
+	 * be pop out the Stack.
+	 * @param none : none
+	 * @return element : any */
+	pop(){
+		return this.items.pop();
+	}
 }
 module.exports = Stack;

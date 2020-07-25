@@ -21,3 +21,13 @@ describe("push(element)", () => {
 		expect(myStack.push('Andres')).toStrictEqual(['Andres']);
 	});
 });
+
+describe("pop()", () => {
+	var myStack = new Stack();
+
+	it("Remove element from the Stack", () => {
+		myStack.push('Andres');
+		expect(myStack.pop()).toEqual('Andres');
+		expect(myStack.size()).toBe(0);
+	});
+});
