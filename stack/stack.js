@@ -26,5 +26,12 @@ class Stack{
 	pop(){
 		return this.items.pop();
 	}
+
+	/* Return top element of the Stack
+	 * @param none : none
+	 * @return element : any */
+	peek(){
+		return this.items[this.size() - 1];
+	}
 }
 module.exports = Stack;

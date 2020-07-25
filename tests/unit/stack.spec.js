@@ -31,3 +31,13 @@ describe("pop()", () => {
 		expect(myStack.size()).toBe(0);
 	});
 });
+
+describe("peek()", () => {
+	var myStack = new Stack();
+
+	it("Return top element of the Stack", () => {
+		myStack.push('Andres');
+		myStack.push('Arturo');
+		expect(myStack.peek()).toEqual('Arturo');
+	});
+});
