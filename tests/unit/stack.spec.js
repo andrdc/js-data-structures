@@ -54,3 +54,15 @@ describe("peek()", () => {
 		expect(myStack.peek()).toEqual('Gizmo');
 	});
 });
+
+describe("clear()", () => {
+	var myStack = new Stack();
+
+	it("Return empty Stack", () => {
+		myStack.push('Coqueta');
+		myStack.push('Gizmo');
+		myStack.push('Maia');
+		myStack.push('Tyra');
+		expect(myStack.clear()).toStrictEqual([]);
+	});
+});

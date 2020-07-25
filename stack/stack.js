@@ -43,5 +43,16 @@ class Stack{
 	peek(){
 		return this.items[this.size() - 1];
 	}
+
+	/* Clear out the Stack. Looping until the size is 0
+	 * and pop one element by iteration.
+	 * @param none : none
+	 * @return elements : array */
+	clear(){
+		while(this.size() > 0){
+			this.pop();
+		}
+		return this.items;
+	}
 }
 module.exports = Stack;
