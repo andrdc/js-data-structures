@@ -35,7 +35,7 @@ let Queue = (function() {
 		 * @return item : Any */
 		dequeue(){
 			let myItems = items.get(this);
-			return myItems.splice(0, 1)[0];
+			return myItems.shift();
 		}
 
 		/* Return first element of the Queue
