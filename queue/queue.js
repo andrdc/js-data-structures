@@ -37,6 +37,14 @@ let Queue = (function() {
 			let myItems = items.get(this);
 			return myItems.splice(0, 1)[0];
 		}
+
+		/* Return first element of the Queue
+		 * @param none : none
+		 * @return item : Any */
+		front(){
+			let myItems = items.get(this);
+			return myItems[0];
+		}
 	}
 	return Queue;
 })();

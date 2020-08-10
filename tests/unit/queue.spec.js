@@ -28,3 +28,10 @@ describe('dequeue()', () => {
 	});
 });
 
+describe('front()', () => {
+	it('Return first item of the Queue', () => {
+		expect(myQueue.front()).toBeUndefined();
+		myQueue.enqueue('Gizmo');
+		expect(myQueue.front()).toMatch('Gizmo');
+	});
+});
