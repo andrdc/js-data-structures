@@ -29,6 +29,14 @@ let Queue = (function() {
 			myItems.push(item);
 			return myItems;
 		}
+
+		/* Delete first queue element
+		 * @param none : none
+		 * @return item : Any */
+		dequeue(){
+			let myItems = items.get(this);
+			return myItems.splice(0, 1)[0];
+		}
 	}
 	return Queue;
 })();
