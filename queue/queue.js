@@ -45,6 +45,20 @@ let Queue = (function() {
 			let myItems = items.get(this);
 			return myItems[0];
 		}
+
+		/* Print Queue. The first element is the front.
+		 * @param none : none
+		 * @return queue : String */
+		print(){
+			let myItems = items.get(this);
+			let str = '';
+
+			myItems.forEach((item, index) => {
+				str += (item += (index != myItems.length - 1) ? ', ' : '');
+			});
+
+			return str;
+		}
 	}
 	return Queue;
 })();
