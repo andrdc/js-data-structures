@@ -18,7 +18,7 @@ let Queue = (function() {
 		 * @return isEmpty : bool */
 		isEmpty(){
 			let myItems = items.get(this);
-			return this.size() === 0 ? true : false;
+			return this.size() === 0;
 		}
 
 		/* Add new item to the queue
